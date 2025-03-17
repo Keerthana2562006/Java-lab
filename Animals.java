@@ -1,52 +1,18 @@
-//
-package sample;
-class Animal extends Thread {
-    public void animal1() {
-        String name = "dog";
-        String colour = "black";
-        int age = 4;
-        String price = "50$";
-
-        System.out.println("ANIMAL DETAILS");
-        System.out.println("_____________________________________");
-        System.out.println("Animal name:" + name);
-        System.out.println("Animal colour:" + colour);
-        System.out.println("Animal age:" + age);
-        System.out.println("Animal price:" + price);
+import java.util.List;
+import java.util.ArrayList;
+class Animals {
+    public static void main (String []args){
+        List <String> animal= new ArrayList<>();
+        animal.add("dog");
+        animal.add("cat");
+        animal.add("cow");
+        animal.add("pig");
+        animal.add("tiger");
+        animal.add("lion");
+        animal.add("sheep");
+        animal.add("goat");
+        animal.add("zebra");
+        animal.add("cheetha");
+        System.out.println("Animals"+animal);
     }
-    public void animal2() {
-        String name = "cat";
-        String colour = "black";
-        int age = 4;
-        String price = "50$";
-
-        System.out.println("ANIMAL DETAILS");
-        System.out.println("_____________________________________");
-        System.out.println("Animal name:" + name);
-        System.out.println("Animal colour:" + colour);
-        System.out.println("Animal age:" + age);
-        System.out.println("Animal price:" + price);
-
-    }
-    public void animal3() {
-        String name = "elephant";
-        String colour = "black";
-        int age = 4;
-        String price = "50$";
-
-        System.out.println("ANIMAL DETAILS");
-        System.out.println("_____________________________________");
-        System.out.println("Animal name:" + name);
-        System.out.println("Animal colour:" + colour);
-        System.out.println("Animal age:" + age);
-        System.out.println("Animal price:" + price);
-    }
-        public static void main (String[] args) {
-            Animal a = new Animal();
-            // Call the method to print animal details
-            a.animal1();
-            a.animal2();
-            a.animal3();
-
-        }
-    }
+}
